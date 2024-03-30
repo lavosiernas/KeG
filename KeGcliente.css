@@ -1,0 +1,202 @@
+/* Estilos para a página de Pedido (Cliente) */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 0px 0px 70px rgb(255, 255, 255);
+    z-index: 1000;
+    box-shadow: 0px 0px 45px rgb(0, 0, 0);
+    z-index: 1000;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+#menu, #cart {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #000000;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5pt;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgb(171, 170, 165);
+    z-index: 1000;
+}
+
+button:hover {
+    background-color: #bca315;
+}
+
+#submit-order {
+    background-color: #28a745;
+}
+
+#submit-order:hover {
+    background-color: #218838;
+}
+
+/* Estilos para a imagem (logo) no cabeçalho */
+
+header img {
+    width: 100px; /* Ajuste conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 3%;
+    box-shadow: 0px 0px 10px rgb(171, 170, 165);
+    z-index: 1000;
+}
+
+/* Estilos para o formulário de pedido */
+
+#order-form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#order-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#order-form input[type="text"] {
+    width: 70%; /* Define uma largura inicial reduzida */
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: width 0.3s ease-in-out; /* Adiciona transição de largura */
+}
+
+#order-form input[type="text"]:focus {
+    width: 100%; /* Ajusta a largura quando o campo está focado */
+}
+/* Estilos para o menu de comidas */
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-list li {
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+}
+
+.menu-list li img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 21px rgba(0, 135, 239, 0.718);
+}
+
+.item-info {
+    margin-top: 10px;
+}
+
+.item-info span {
+    display: block;
+    font-weight: bold;
+}
+
+/* Estilos para o botão principal */
+.add-to-cart {
+    background-color: #1520bc;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #0b126d;
+}
+
+/* Estilos para os botões de sabores */
+.flavors .flavor {
+    background-color: #bca315;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.flavors .flavor.selected {
+    background-color: #333;
+}
+
+.flavors .flavor {
+    background-color: #28a745;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.flavors .flavor:hover {
+    background-color: #0b126d;
+    color: #fff;
+}
+
+.sabores-content {
+    display: none;
+    overflow: hidden;
+    transition: height 0.1s ease;
+}
+
+.sabores-content.show {
+    display: block;
+}
+
+.flavors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flavors .flavor {
+    background-color: #a72828;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 5px;
+}
+.flavors .flavor:hover {
+    background-color: #671919;
+}
+
+/* Adicione outros estilos conforme necessário */

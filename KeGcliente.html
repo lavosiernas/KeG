@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazer Pedido</title>
+    <link rel="stylesheet" href="KeGcliente.css">
+</head>
+<body>
+    <header>
+        <img src="c:\Users\User\Downloads\WhatsApp Image 2024-03-29 at 4.41.53 PM.jpeg" alt="Logo do restaurante">
+        
+        <h1>𝒦 ℰ 𝒢 - 𝒟ℯ𝓁𝒾𝒸𝒾𝒶𝓈</h1>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Cardápio</h2>
+            <ul class="menu-list">
+                <li>
+                    <div><img src="c:\Users\User\Downloads\Chocolate Milk Shake Instagram Story.png" alt="Milkshake">
+                        <br><div class="item-info">
+                        <span>Milkshake R$ 10.00</span></div></br>
+                    <button class="sabores-button">Sabores</button>
+                   <br> <div class="sabores-content">
+                   </br><div class="flavors">
+                            <button class="flavor oreo" data-flavor="Oreo">Oreo</button>
+                            <button class="flavor ovomaltine" data-flavor="Ovomaltine">Ovomaltine</button>
+                            <button class="flavor morango" data-flavor="Morango">Morango</button>
+                            <button class="flavor chocolate" data-flavor="Chocolate">Chocolate</button>
+                        </div></br>
+                    </div></br>
+                        <button class="add-to-cart">Selecionar pedido</button>
+                </li>
+                <li>
+                    <img src="c:\Users\User\Downloads\Chocolate Milk Shake Instagram Story (1).png" alt="Comida 2">
+                    <br><div class="item-info">
+                        <span>Hambúrger - R$ 8.00</span></br>
+                        <button class="add-to-cart">Selecionar pedido</button>
+                    </div>
+                </li>
+                <!-- Adicione mais itens conforme necessário -->
+            </ul>
+        </section>
+        <section id="cart">
+            <h2>Envie seu pedido aqui:</h2>
+            <form id="order-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="address">Endereço de Entrega:</label>
+                <input type="text" id="address" name="address" required>
+                
+        <section id="cart">
+            <ul>
+                <!-- Lista de itens adicionados ao carrinho -->
+            </ul>
+            <button id="clear-order">Limpar Pedido</button>
+            <button id="submit-order">Enviar Pedido</button>
+        </section>
+    </main>
+
+    <script src="KeGcliente.js"></script>
+</body>
+</html>
